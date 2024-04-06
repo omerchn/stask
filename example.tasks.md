@@ -7,7 +7,7 @@ TODO:
 
 ## single task
 
-- compiler - .tasks.md file to json (`$ stask compile -f <file> -o <output>`)
+- compiler - .tasks.md file to json (`$ stask compile <file> -o <output file>`) (output defaults to stdout)
   json fields: current, todo, tasks.
   tasks - structured tasks object, with keys as category, each category has keys as subjects, and those are arrays of objects of task and description.
   todo - in order of to do, array of objects with category, subject, task, description.
@@ -34,4 +34,4 @@ TODO:
 
 - add git sync statusbar item next to branch
   the item will show the number of commits behind remote
-  `git fetch` we be ran periodically to check
+  `git fetch` we be ran on nvim open and periodically to check
